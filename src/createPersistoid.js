@@ -1,5 +1,5 @@
 // @flow
-
+import { stringify } from 'flatted'
 import { KEY_PREFIX, REHYDRATE } from './constants'
 
 import type { Persistoid, PersistConfig, Transform } from './types'
@@ -138,5 +138,5 @@ export default function createPersistoid(config: PersistConfig): Persistoid {
 
 // @NOTE in the future this may be exposed via config
 function defaultSerialize(data) {
-  return JSON.stringify(data)
+  return stringify(data)
 }

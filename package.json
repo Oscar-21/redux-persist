@@ -87,5 +87,7 @@
   "peerDependencies": {
     "redux": ">4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "flatted": "^3.0.2"
+  }
 }
